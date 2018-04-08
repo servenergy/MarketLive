@@ -10,12 +10,11 @@
 
 @interface WeatherViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-    
-    
-    
         NSMutableArray *maxTempArray;
         NSMutableArray *minTempArray;
         NSMutableArray *dayArray;
+    
+    __weak IBOutlet UITableView * weatherTableView;
 }
 
 @end

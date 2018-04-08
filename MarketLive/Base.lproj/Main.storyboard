@@ -207,7 +207,7 @@
         <!--Weather View Controller-->
         <scene sceneID="S2W-g9-gMa">
             <objects>
-                <viewController id="pYk-Gf-BIL" customClass="WeatherViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherViewController" id="pYk-Gf-BIL" customClass="WeatherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hka-pT-POE"/>
                         <viewControllerLayoutGuide type="bottom" id="3jQ-kO-H6m"/>
@@ -233,10 +233,13 @@
                             <constraint firstItem="vUw-JH-pxb" firstAttribute="top" secondItem="hka-pT-POE" secondAttribute="bottom" id="qxD-Vw-O5o"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="weatherTableView" destination="vUw-JH-pxb" id="nKM-cB-g6X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQE-rr-Ki3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1252" y="832.53373313343332"/>
+            <point key="canvasLocation" x="-2018" y="1045"/>
         </scene>
         <!--Sub Category View Controller-->
         <scene sceneID="f6D-B4-Kjn">

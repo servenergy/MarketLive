@@ -64,10 +64,10 @@
    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     
     
-    id objViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    id homeViewController = [storyboard instantiateViewControllerWithIdentifier:@"HomeViewController"];
 
     
-    id objViewController1 = [storyboard instantiateViewControllerWithIdentifier:@"InfoViewController"];
+    id infoViewController = [storyboard instantiateViewControllerWithIdentifier:@"InfoViewController"];
     
     if(![[NSUserDefaults standardUserDefaults] valueForKey:@"selectedLanguage"])
     {
@@ -75,7 +75,7 @@
         [[NSUserDefaults standardUserDefaults] setValue:@"1" forKey:@"selectedLanguage"];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        objViewController = [storyboard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
+        homeViewController = [storyboard instantiateViewControllerWithIdentifier:@"SettingsViewController"];
     }
     
     
@@ -86,8 +86,8 @@
 
   
     objNavigationViewController = [[NavigationViewController alloc]
-                                   initWithRootViewController:objViewController];
-    objNavigationViewController1 = [[NavigationViewController alloc] initWithRootViewController:objViewController1];
+                                   initWithRootViewController:homeViewController];
+    objNavigationViewController1 = [[NavigationViewController alloc] initWithRootViewController:infoViewController];
     
     [objNavigationViewController.view addSubview:[BottomTabBar sharedInstance]];
     
@@ -99,16 +99,15 @@
     self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:objNavigationViewController leftDrawerViewController:objNavigationViewController1];
     
     
+    //[[UINavigationBar appearance] setBackgroundImage:[[UIImage imageNamed:@"NavigationImage"] resizableImageWithCapInsets:UIEdgeInsetsZero] forBarMetrics:UIBarMetricsDefault];
 
     
     self.drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModePanningCenterView;
     self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModePanningCenterView;
     
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = objNavigationViewController;
+    self.window.rootViewController = self.drawerController;
 
-    
-     _window.rootViewController = self.drawerController;
     [self.window makeKeyAndVisible];
     
     

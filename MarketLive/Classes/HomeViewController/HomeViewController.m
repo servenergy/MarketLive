@@ -359,8 +359,9 @@ BOOL babyDefaultShown;
 
 - (IBAction)weatherButton:(id)sender {
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.accuweather.com/en/in/pune/204848/current-weather/204848"]];
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.accuweather.com/en/in/pune/204848/current-weather/204848"]];
     
+    [RequestManager pushViewWithStoryboardIdentifier:@"WeatherViewController"];
     
     
 }

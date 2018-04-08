@@ -10,24 +10,31 @@
 
 @implementation RequestManager
 
-+(void) pushViewWithStoryboardIdentifier : (NSString *) identifier
-{
++(void) pushViewWithStoryboardIdentifier : (NSString *) identifier {
+    
     AppDelegate * objAppDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    
-    @try
-    {
-        id objViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+
+    if ([identifier isEqualToString:@"InfoViewController"]) {
         
-        if (![[objAppDelegate.objNavigationViewController topViewController] isKindOfClass:[objViewController class]])
-        {
-            [objAppDelegate.objNavigationViewController pushViewController:objViewController animated:YES];
-        }
+        [objAppDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
     }
-    @catch (NSException *exception)
-    {
-        NSLog(@"No storyboard identifier found : %@", identifier);
+    else {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+        
+        @try
+        {
+            id objViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
+            
+            if (![[objAppDelegate.objNavigationViewController topViewController] isKindOfClass:[objViewController class]])
+            {
+                [objAppDelegate.objNavigationViewController pushViewController:objViewController animated:YES];
+            }
+        }
+        @catch (NSException *exception)
+        {
+            NSLog(@"No storyboard identifier found : %@", identifier);
+        }
     }
 }
 

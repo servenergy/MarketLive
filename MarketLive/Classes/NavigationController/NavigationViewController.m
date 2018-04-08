@@ -112,7 +112,7 @@
         
         if ([viewController isKindOfClass:[HomeViewController class]] || [viewController isKindOfClass:[SubCategoryViewController class]] || [viewController isKindOfClass:[VendorsListViewController class]] || [viewController isKindOfClass:[VendorViewController class]] || [viewController isKindOfClass:[RootVendorViewController class]] || [viewController isKindOfClass:[VendorsSearchListViewController class]])
         {
-            
+            /*
             UIView * titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 8, screenWidth, 28)];
             
             UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(screenWidth/2 - 150, 0, 204, 28)];
@@ -121,6 +121,16 @@
             [titleView addSubview:imageView];
             
             [viewController.navigationItem setTitleView:titleView];
+             
+            
+            UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 204, 28)];
+            
+            imageView.image = [UIImage imageNamed:@"NavigationImage"];
+            
+            imageView.backgroundColor = [UIColor redColor];
+
+            [viewController.navigationController.navigationBar addSubview:imageView];
+             */
         }
         else
         {
@@ -201,7 +211,12 @@
     
     if([title isEqualToString:@""])
     {
-        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, [[dictionary valueForKeyPath:@"image.width"] integerValue], [[dictionary valueForKeyPath:@"image.height"] integerValue])];
+        CGFloat width = [[dictionary valueForKeyPath:@"image.width"] floatValue];
+        
+        CGFloat height = [[dictionary valueForKeyPath:@"image.height"] floatValue];
+        
+        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+        
         button.backgroundColor = [UIColor clearColor];
         [button setImage:[UIImage imageNamed:[dictionary valueForKeyPath:@"image.imageName"]] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(navigationBarButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -242,6 +257,8 @@
     viewController.edgesForExtendedLayout=UIRectEdgeNone;
     viewController.extendedLayoutIncludesOpaqueBars=NO;
     viewController.automaticallyAdjustsScrollViewInsets=NO;
+    
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NavigationImage"] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
     
     [super pushViewController:viewController animated:animated];
 }
