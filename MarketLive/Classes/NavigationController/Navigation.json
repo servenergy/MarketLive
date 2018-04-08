@@ -1,0 +1,459 @@
+{
+    "ViewControllers": [
+                        "HomeViewController",
+                        "SubCategoryViewController",
+                        "VendorsListViewController",
+                        "VendorViewController",
+                        "BackViewController",
+                        "FavoriteViewController",
+                        "NotificationViewController",
+                        "SettingsViewController",
+                        "NewsViewController",
+                        "WorldViewController",
+                        "InfoViewController"
+                        ],
+    "BottomBar": [
+                  "HomeViewController",
+                  "BackViewController",
+                  "FavoriteViewController",
+                  "NotificationViewController",
+                  "SettingsViewController",
+                  "NewsViewController",
+                  "InfoViewController"
+                  ],
+    
+    "HomeViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": true,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "SubCategoryViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": true,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "VendorsSearchListViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": true,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "VendorsListViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": true,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "VendorViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "FavoriteViewController" : {
+        "navigationBar": {
+            "title": "Favorites",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "InfoViewController" : {
+        "navigationBar": {
+            "title": "Information",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "SettingsViewController" : {
+        "navigationBar": {
+            "title": "Settings",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "NewsViewController" : {
+        "navigationBar": {
+            "title": "News",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "NotificationViewController" : {
+        "navigationBar": {
+            "title": "Notification",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "CommonWebView" : {
+        "navigationBar": {
+            "title": "",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "DetailNewsViewController" : {
+        "navigationBar": {
+            "title": "News",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "WeatherViewController" : {
+        "navigationBar": {
+            "title": "Weather",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    },
+    
+    "RootVendorViewController" : {
+        "navigationBar": {
+            "title": "M Live",
+            "enable": true,
+            "leftBarButton": {
+                "enable": false,
+                "title": "",
+                "image": {
+                    "imageName": "Menu",
+                    "height": 20,
+                    "width": 20
+                },
+                "storyBoardID": "InfoViewController"
+                
+            },
+            "rightBarButton": {
+                "enable": false,
+                "title": "Notifi",
+                "image": {
+                    "imageName": "",
+                    "height": 30,
+                    "width": 30
+                },
+                "storyBoardID": "NotificationViewController"
+            }
+        },
+        "bottomBar": {
+            "enable": true
+        }
+    }
+    
+}

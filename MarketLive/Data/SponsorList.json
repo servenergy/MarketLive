@@ -1,0 +1,47 @@
+[{
+"banner_id": "1",
+"start_date": "20160101",
+"end_date": "20161231",
+"banner_type": "2",
+"target_media": "1",
+"iphone-banner": "http:\/\/www.mlive.co.in\/upload\/bannerImages\/Slider1.png",
+"target_type": "web",
+"duration": "5"
+}, {
+"banner_id": "52",
+"start_date": "20160101",
+"end_date": "20161231",
+"banner_type": "2",
+"target_media": "2",
+"iphone-banner": "http:\/\/www.mlive.co.in\/upload\/bannerImages\/Slider2.png",
+"target_type": "web",
+"duration": "5"
+}, {
+"banner_id": "3",
+"start_date": "20160101",
+"end_date": "20161231",
+"banner_type": "2",
+"target_media": "3",
+"iphone-banner": "http:\/\/www.mlive.co.in\/upload\/bannerImages\/Slider3.png",
+"target_type": "web",
+"duration": "5"
+}, {
+"banner_id": "4",
+"start_date": "20160101",
+"end_date": "20161231",
+"banner_type": "2",
+"target_media": "4",
+"iphone-banner": "http:\/\/www.mlive.co.in\/upload\/bannerImages\/Slider4.png",
+"target_type": "web",
+"duration": "5"
+}, {
+"banner_id": "5",
+"start_date": "20160101",
+"end_date": "20161231",
+"banner_type": "2",
+"target_media": "5",
+"iphone-banner": "http:\/\/www.mlive.co.in\/upload\/bannerImages\/Slider5.png",
+"target_type": "web",
+"duration": "5"
+}]
+

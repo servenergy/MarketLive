@@ -1,0 +1,54 @@
+//
+//  PrefixHeader.pch
+//  MarketLive
+//
+//  Created by Vinod on 06/12/15.
+//  Copyright © 2015 Vinod Sutar. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+
+#import "AdBannerMacro.h"
+#import "Header.h"
+#import "Macros.h"
+#import "Developer.h"
+#import "RequestManager.h"
+#import "UIColor+HexColor.h"
+#import "Reachability.h"
+#import "HomeViewController.h"
+#import "FavoriteViewController.h"
+#import "InfoViewController.h"
+#import "RequestManager.h"
+#import "BottomTabBar.h"
+
+
+#import "Vendor.h"
+#import "MLCategory.h"
+#import "NavigationHolder.h"
+#import "NavigationViewController.h"
+#import "AppDelegate.h"
+#import "NewsCell.h"
+#import "CustomHomeCollectionCell.h"
+#import "BannerCell.h"
+#import "FavoriteManager.h"
+#import "DatabaseManager.h"
+
+#import "VendorManager.h"
+
+#import "CategoryManager.h"
+
+#import "ZipArchive.h"
+#import "ZipUnzipManager.h"
+
+#import <MessageUI/MessageUI.h>
+
+#import "HUD.h"
+
+
+#endif
+
+#endif

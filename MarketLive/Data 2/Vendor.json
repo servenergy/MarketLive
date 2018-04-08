@@ -1,0 +1,319 @@
+[{
+ "vendor_id": 1,
+ "vendor_short_name": "Mathura Complex",
+ "vendor_name": "Mathura Complex",
+ "category_id": 33,
+ "address": "Near Mathura Highschool, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "9860609696",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 2,
+ "vendor_short_name": "Vastu Traders",
+ "vendor_name": "Vastu Traders",
+ "category_id": 33,
+ "address": "Galli No. 7, Shahunagar, Chnadur",
+ "pincode": "",
+ "phone_number": "0231-254254",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 3,
+ "vendor_short_name": "Baskin Robbins",
+ "vendor_name": "Baskin Robbins Ice cream parlour",
+ "category_id": 78,
+ "address": "Shop No. 5, Patrika plaza, Near HDFC Bank ATM, Next to ASC college",
+ "pincode": "",
+ "phone_number": "0231-254254",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 4,
+ "vendor_short_name": "Hotel Najuka",
+ "vendor_name": "Hotel Najuka (Pure Veg)",
+ "category_id": 20,
+ "address": "Sundar Baag, Mothe Tale, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "9730596842",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 5,
+ "vendor_short_name": "Balaji Patsanstha",
+ "vendor_name": "Shri Balaji Nagri Sahakari Patsanstha Ltd., Ichalkaranji",
+ "category_id": 67,
+ "address": "Balaji Nagar, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "9404121212",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 6,
+ "vendor_short_name": "Gangaram Apparels",
+ "vendor_name": "Gangaram Apparels - Mens Collection",
+ "category_id": 52,
+ "address": "Near ASC College, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "0231-2429943",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 7,
+ "vendor_short_name": "M/s. Tuljaram Saraf",
+ "vendor_name": "M/s. Tuljaram Saraf",
+ "category_id": 55,
+ "address": "\"Suprabhat\" Sambhaji Chowk, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "0231-2420364",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 8,
+ "vendor_short_name": "Podar International School",
+ "vendor_name": "Podar International School",
+ "category_id": 36,
+ "address": "Ichalkaranji",
+ "pincode": "",
+ "phone_number": "9422512767",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 9,
+ "vendor_short_name": "Kabade Classes",
+ "vendor_name": "Kabade Classes",
+ "category_id": 38,
+ "address": "Ring Road, Nakoda Nagar, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "0231-2431035",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 10,
+ "vendor_short_name": "Ichalkaranji Mills",
+ "vendor_name": "Ichalkaranji Mills",
+ "category_id": 94,
+ "address": "Dummy address of Ichalkaranji",
+ "pincode": "",
+ "phone_number": "0230-11111111",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 11,
+ "vendor_short_name": "Balaji Bakers",
+ "vendor_name": "Balaji Bakers",
+ "category_id": 84,
+ "address": "Zenda Chowk, Sangli naka, ASC College",
+ "pincode": "",
+ "phone_number": "0230-22222222",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 12,
+ "vendor_short_name": "Vaishnavi Digital",
+ "vendor_name": "Vaishnavi Digital",
+ "category_id": 106,
+ "address": "ST Stand, Patil Building",
+ "pincode": "",
+ "phone_number": "9922772887",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 13,
+ "vendor_short_name": "Pushpanjali Arts",
+ "vendor_name": "Pushpanjali Arts",
+ "category_id": 106,
+ "address": "Near Sakharpe Hospital, Ichalkaranji",
+ "pincode": "",
+ "phone_number": "9224756791",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ },
+ 
+ 
+ 
+ 
+ {
+ "vendor_id": 14,
+ "vendor_short_name": "Seema Arts",
+ "vendor_name": "Seema Art",
+ "category_id": 106,
+ "address": "Tilak Road",
+ "pincode": "",
+ "phone_number": "12341234",
+ "email": "",
+ "subscription_from": "",
+ "subscription_to": "",
+ "job_description": "",
+ "vendor_job": "",
+ "tags": "",
+ "longitude": "",
+ "latitude": "",
+ "status": 1,
+ "language_id": 0
+ }
+ ]

@@ -1,0 +1,308 @@
+{
+    
+    "Categories": [
+                   "Accommodation",
+                   "Agriculture",
+                   "Beauty",
+                   "Construction",
+                   "Education",
+                   "Emergency",
+                   "Entertainment",
+                   "Fashion",
+                   "Festive & Functions",
+                   "Financial Services",
+                   "Food",
+                   "Government Services",
+                   "Grocery",
+                   "Jobs/Recruitment",
+                   "Lawyer/Advisor",
+                   "Textile",
+                   "Technology",
+                   "Transport",
+                   "Other"
+                   ],
+    "Emergency": {
+        "Categories": [
+                       "Hospitals",
+                       "Police",
+                       "Fire Brigade",
+                       "Towing",
+                       "Blood Bank",
+                       "Ambulance",
+                       "Security Services"
+                       ],
+        
+        "Hospitals": {},
+        "Police": {},
+        "Fire Brigade": {},
+        "Towing": {},
+        "Blood Bank": {},
+        "Ambulance": {},
+        "Security Services": {}
+    },
+    "Government Services": {
+        "Categories": [
+                       "Rationing",
+                       "AdhaarCard",
+                       "Election Services",
+                       "Other"
+                       ],
+        "Rationing": {},
+        "AdhaarCard": {},
+        "Election Services": {},
+        "Other": {}
+    },
+    
+    "Construction" : {
+        "Categories" : [
+                        "Builders",
+                        "Traders"
+                        ],
+        "Builders" :[
+                    ],
+        "Traders" :[
+                    ]
+        
+    },
+    "Food": {
+        "Categories": [
+                       "Restaurants",
+                       "Takeaway",
+                       "Breakfast",
+                       "Juice",
+                       "Ice Cream Parlour"
+                       ],
+        
+        "Restaurants": {},
+        "Takeaway": {},
+        "Breakfast": {},
+        "Juice": {},
+        "Ice Cream Parlour" :[
+                              ]
+    },
+    "Accommodation": {
+        "Categories": [
+                       "Hotel",
+                       "Lodging",
+                       "Hostels",
+                       "Renting options"
+                       ],
+        
+        "Hotel": [
+                  ],
+        "Plumbing Services": {},
+        "Electrician": {},
+        "Carpenter": {},
+        "Other": {},
+        "Architecture": {},
+        "Interior Designer": {}
+    },
+    "Transport": {
+        "Categories": [
+                       "Rent a vehicle",
+                       "Buy a vehicle",
+                       "Repair a vehicle",
+                       "Decorate a vehicle"
+                       ],
+        "Rent a vehicle": {},
+        "Buy a vehicle": {},
+        "Repair a vehicle": {},
+        "Decorate a vehicle": {}
+    },
+    "Entertainment": {
+        "Categories": [
+                       "Movies",
+                       "Shows",
+                       "Games",
+                       "Sports Matches",
+                       "Sports Shoppe"
+                       ],
+        "Movies": {},
+        "Shows": {},
+        "Games": {},
+        "Sports Matches": {},
+        "Sports Shoppe": {}
+    },
+    "Financial Services": {
+        "Categories": [
+                       "Loans",
+                       "Taxes",
+                       "Insurance",
+                       "Investments",
+                       "CA",
+                       "CS",
+                       "Advisors"
+                       ],
+        "Loans": [
+                  ],
+        "Taxes": {},
+        "Insurance": {},
+        "Investments": {},
+        "CA": {},
+        "CS": {},
+        "Advisors": {}
+    },
+    "Fashion": {
+        "Categories": [
+                       "Clothes",
+                       "Footwear’s",
+                       "Other accessories",
+                       "Jewelery"
+                       ],
+        "Clothes": [
+                    ],
+        "Footwear’s": {},
+        "Other accessories": {},
+        "Jewelery": [
+                     ]
+    },
+    "Education": {
+        "Categories": [
+                       "Universities/Colleges",
+                       "Schools",
+                       "Vocational Education",
+                       "Private Tuitions, Coaching",
+                       "Educational Material Shoppers"
+                       ],
+        "Universities/Colleges": {},
+        "Schools": [
+                    ],
+        "Vocational Education": {},
+        "Private Tuitions, Coaching": [
+                                       ],
+        "Educational Material Shoppers": {}
+    },
+    "Technology": {
+        "Categories": [
+                       "Mobile Buy Sell Repair Recharge",
+                       "Landline Buy Sell Repair Recharge",
+                       "Laptop/computer Buy Sell Repair Internet Services/Recharge",
+                       "Renting options"
+                       ],
+        "Mobile Buy Sell Repair Recharge": {},
+        "Landline Buy Sell Repair Recharge": {},
+        "Laptop/computer Buy Sell Repair Internet Services/Recharge": {},
+        "Renting options": {}
+    },
+    "Textile": {
+        "Categories": [
+                       "Pre-Production services",
+                       "Production services",
+                       "Processing Services",
+                       "Post processing Services",
+                       "Dealers/Agents"
+                       ],
+        "Pre-Production services": {},
+        "Production services": {},
+        "Processing Services": {},
+        "Post processing Services": {},
+        "Dealers/Agents": [
+                           ]
+    },
+    "Festive & Functions": {
+        "Categories": [
+                       "Marriages",
+                       "Halls, Lawns",
+                       "Musicians, Bands",
+                       "Catering",
+                       "Photography",
+                       "Sound Services",
+                       "Event Management Services",
+                       "Beauticians",
+                       "Clothes and Accessories",
+                       "Costume Designers/Tailors",
+                       "Other"
+                       ],
+        "Marriages": {},
+        "Halls, Lawns": {},
+        "Musicians, Bands": {},
+        "Catering": {},
+        "Photography": {},
+        "Sound Services": {},
+        "Event Management Services": {},
+        "Beauticians": {},
+        "Clothes and Accessories": {},
+        "Costume Designers/Tailors": {},
+        "Other": {}
+    },
+    "Agriculture": {
+        "Categories": [
+                       "Fertilizers",
+                       "Agri Equipments",
+                       "Markets",
+                       "Agents/Dealers",
+                       "Cattle Docs & Services"
+                       ],
+        "Fertilizers": {},
+        "Agri Equipments": {},
+        "Markets": {},
+        "Agents/Dealers": {},
+        "Cattle Docs & Services": {}
+    },
+    "Jobs/Recruitment": {
+        "Categories": [
+                       "Recruitment Agencies",
+                       "Job Vacancies",
+                       "Contractors"
+                       ],
+        "Recruitment Agencies": {},
+        "Job Vacancies": {},
+        "Contractors": {}
+    },
+    "Lawyer/Advisor": {
+        "Categories": [
+                       "Court Lawyers",
+                       "Offices"
+                       ],
+        "Court Lawyers": {},
+        "Offices": {}
+    },
+    "Grocery": {
+        "Categories": [
+                       "Grocery Shops",
+                       "Bakeries"
+                       ],
+        "Grocery Shops": {},
+        "Bakeries": [
+                     ]
+    },
+    "Beauty": {
+        "Categories": [
+                       "Gents Beauty Parlor",
+                       "Ladies Beauty Parlor",
+                       "Spa & Massage Centers",
+                       "Beauty Accessories Shops"
+                       ],
+        "Gents Beauty Parlor": {},
+        "Ladies Beauty Parlor": {},
+        "Spa & Massage Centers": {},
+        "Beauty Accessories Shops": {}
+    },
+    "Other": {
+        "Categories": [
+                       "Veterinary Doctors",
+                       "NGO Services",
+                       "Birthday Wishes",
+                       "Digital Flex Boards"
+                       ],
+        "Veterinary Doctors": {},
+        "NGO Services": {},
+        "Birthday Wishes": {},
+        "Digital Flex Boards": [
+                                {
+                                "vendorName": "Vaishnavi Digital",
+                                "vendorDisplayName": "Vaishnavi Digital",
+                                "address": "ST Stand, Patil Building",
+                                "contact": "9922772887",
+                                "imageName" : "vendor_3",
+                                "mobile": "7841987304"
+                                },{
+                                "vendorName": "Pushpanjali Arts",
+                                "vendorDisplayName": "Pushpanjali Arts",
+                                "address": "Near Sakharpe Hospital, Ichalkaranji",
+                                "contact": "9224756791",
+                                "imageName" : "vendor_6",
+                                "mobile": "9156056526"
+                                }],
+    }
+}
