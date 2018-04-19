@@ -10,6 +10,7 @@
 #import "WeatherCell.h"
 #import <CoreLocation/CoreLocation.h>
 
+
 @interface WeatherViewController () <CLLocationManagerDelegate>
 {
     CLLocationManager *locationManager;
@@ -18,13 +19,15 @@
 @end
 
 @implementation WeatherViewController
-
+@synthesize cityLabel,dayLabel,tempLabel,mainImage;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     maxTempArray = [[NSMutableArray alloc]init];
     minTempArray = [[NSMutableArray alloc]init];
     dayArray = [[NSMutableArray alloc]init];
+    weatherImageArray = [[NSMutableArray alloc] init];
+    backgroundImageArray = [[NSMutableArray alloc] init];
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
@@ -38,15 +41,23 @@
     [locationManager startUpdatingLocation];
     
     //[self getWeatherDataFromLatitude:@"8.524139" longitude:@"76.936638"];
+    
+    
+    
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
     if ([locations count] > 1) {
         
+        
+        
+        
         CLLocation * oldLocation = [locations objectAtIndex:[locations count] - 2];
         NSLog(@"OldLocation %f %f", oldLocation.coordinate.latitude, oldLocation.coordinate.longitude);
 
+        
+        
     }
     
     CLLocation * newLocation = [locations lastObject];
@@ -111,10 +122,91 @@
             [dayArray addObject:[self getShortCutForDay:day]];
             
             
+            
+            
+            NSString *iconString = [tmpData valueForKey:@"icon"];
+            
+            if ([iconString isEqualToString:@"clear-day"])
+            {
+                [weatherImageArray addObject:@"sunn.png"];
+                [backgroundImageArray addObject:@"bluee.png"];
+            }
+            
+            else if ([iconString isEqualToString:@"clear-night"])
+            {
+                [weatherImageArray addObject:@"night.png"];
+                [backgroundImageArray addObject:@"bluee.png"];
+            }
+            
+            else if ([iconString isEqualToString:@"rain"])
+            {
+                [weatherImageArray addObject:@"rain.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"snow"])
+            {
+                [weatherImageArray addObject:@"snow.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"sleet"])
+            {
+                [weatherImageArray addObject:@"sleet.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"wind"])
+            {
+                [weatherImageArray addObject:@"wind.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"fog"])
+            {
+                [weatherImageArray addObject:@"fog.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"cloudy"])
+            {
+                [weatherImageArray addObject:@"cloudy.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else if ([iconString isEqualToString:@"partly-cloudy-day"])
+            {
+                [weatherImageArray addObject:@"partly-cloudy-day-icon.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            else
+            {
+                [weatherImageArray addObject:@"cloudy-night-icon.png"];
+                [backgroundImageArray addObject:@"gray.png"];
+            }
+            
+            
         }
+          [weatherTableView reloadData];
         
-        [weatherTableView reloadData];
+        NSData *tmpData = [dataArray objectAtIndex:0];
+        
+        
+        NSString *maxText = [tmpData valueForKey:@"temperatureMax"];
+        
+        
+        NSString *maxValue = [self getCelsius:maxText.floatValue];
+        
+        
+        [maxTempArray addObject:maxValue];
+        
+        NSString *iconString = [tmpData valueForKey:@"icon"];
+        
+        
+        
+        tempLabel.text = [NSString stringWithFormat:@"MAX: %@' C",[maxTempArray objectAtIndex:0]];
+        //dayLabel.text = [NSString stringWithFormat:@"%@",[dayArray objectAtIndex:0]];
+        mainImage.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:0]];
+        dayLabel.text = [NSString stringWithFormat:@"%@",iconString];
+      
     }
+    
+ 
+    
     else
     {
         
@@ -141,7 +233,8 @@
     cell.minLbl.text = [NSString stringWithFormat:@"Min: %@' C",[minTempArray objectAtIndex:indexPath.row]];
     cell.MaxLbl.text = [NSString stringWithFormat:@"MAx: %@' C",[maxTempArray objectAtIndex:indexPath.row]];
     cell.dayLbl.text = [NSString stringWithFormat:@"%@",[dayArray objectAtIndex:indexPath.row]];
-    
+    cell.weatherImg.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:indexPath.row]];
+    cell.bgImg.image = [UIImage imageNamed:[backgroundImageArray objectAtIndex:indexPath.row]];
     
     return cell;
 }

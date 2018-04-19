@@ -31,7 +31,7 @@
             "title": "M Live",
             "enable": true,
             "leftBarButton": {
-                "enable": false,
+                "enable": true,
                 "title": "",
                 "image": {
                     "imageName": "Menu",

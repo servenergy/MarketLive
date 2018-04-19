@@ -86,6 +86,8 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [RequestManager pushViewWithStoryboardIdentifier:@"InfoViewController"];
+    
     if (indexPath.row == 2 || indexPath.row == 3) {
         
         NSString * toEmail = @"feedback.servenergy@gmail.com";

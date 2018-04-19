@@ -14,7 +14,14 @@
         NSMutableArray *minTempArray;
         NSMutableArray *dayArray;
     
+    NSMutableArray *weatherImageArray;
+    NSMutableArray *backgroundImageArray;
+    
     __weak IBOutlet UITableView * weatherTableView;
 }
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImage;
 
 @end
