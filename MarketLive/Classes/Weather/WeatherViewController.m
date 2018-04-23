@@ -66,6 +66,7 @@
     [self getWeatherDataFromLatitude:[NSString stringWithFormat:@"%f",newLocation.coordinate.latitude] longitude:[NSString stringWithFormat:@"%f",newLocation.coordinate.longitude]];
 }
 
+
 -(void)getWeatherDataFromLatitude:(NSString *) latitude longitude:(NSString *)longitude {
     
     NSString *urlString = [NSString stringWithFormat:@"https://api.darksky.net/forecast/cdc480a3c71ac91c46b31a161c2ff959/%@,%@", latitude, longitude];
@@ -91,6 +92,8 @@
         
         NSLog(@"temperature in pune in celsius= %.2f",celsius);
         NSLog(@"temperature in pune in fahrenheit= %.2f",fahrenheit);
+        
+        
         
         
         
@@ -179,9 +182,9 @@
                 [backgroundImageArray addObject:@"gray.png"];
             }
             
-            
         }
-          [weatherTableView reloadData];
+        
+        [weatherTableView reloadData];
         
         NSData *tmpData = [dataArray objectAtIndex:0];
         
@@ -198,20 +201,17 @@
         
         
         
-        tempLabel.text = [NSString stringWithFormat:@"MAX: %@' C",[maxTempArray objectAtIndex:0]];
-        //dayLabel.text = [NSString stringWithFormat:@"%@",[dayArray objectAtIndex:0]];
         mainImage.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:0]];
         dayLabel.text = [NSString stringWithFormat:@"%@",iconString];
-      
+        tempLabel.text = [NSString stringWithFormat:@"Max: %@' C",[maxTempArray objectAtIndex:0]];
     }
-    
- 
-    
     else
     {
         
     }
 }
+
+
 
 //Deprecated method
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
@@ -248,6 +248,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return (NSInteger)minTempArray.count;
+    
 }
 
 -(NSString *)getShortCutForDay:(int)day
