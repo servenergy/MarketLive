@@ -86,16 +86,16 @@
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [RequestManager pushViewWithStoryboardIdentifier:@"InfoViewController"];
-    
-    if (indexPath.row == 2 || indexPath.row == 3) {
-        
+     [RequestManager pushViewWithStoryboardIdentifier:@"InfoViewController"];
+   
+    if (indexPath.row == 2 ) {
+       
         NSString * toEmail = @"feedback.servenergy@gmail.com";
-        NSString * subject = @"";
-        NSString * emailBody = @"";
+        NSString * subject = @"Recommend MarketLive App";
+        NSString * emailBody = @"I hope you would like \"MarketLive App\". You can download it from App Store and Google Play";
         
         
-        if (indexPath.row == 2)
+      /*  if (indexPath.row == 2)
         {
             toEmail = @"";
             subject = @"Recommend MarketLive App";
@@ -106,12 +106,11 @@
             toEmail = @"feedback.servenergy@gmail.com";
             subject = @"Feedback - MarketLive App";
             emailBody = @"";
-        }
-            
-            
-        
+        }*/
+     
         Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
         if (mailClass != nil)
+            
         {
             // We must always check whether the current device is configured for sending emails
             if ([mailClass canSendMail])
@@ -127,6 +126,7 @@
         {
             [self launchMailAppOnDevice2:toEmail subject:subject emailBody:emailBody];
         }
+        
     }
     else
     {
@@ -135,6 +135,7 @@
         
         [RequestManager pushViewWithStoryboardIdentifier:@"CommonWebView"];
     }
+    
 }
 
 
@@ -145,12 +146,16 @@
     
     //feedbk_toAdd
     NSArray *toRecipients = [NSArray arrayWithObjects:senderEmail,nil];
+    // NSArray *toRecipients = [NSArray arrayWithObject:@"nikampooja31@gmail.com"];
+    
     [picker setToRecipients:toRecipients];
     
     [picker setSubject:subject];
+    
     [picker setMessageBody:emailBody isHTML:YES];
     
     [self.navigationController presentViewController:picker animated:YES completion:Nil];
+   
     
     UIButton *ButtonObj0 = [UIButton buttonWithType:UIButtonTypeCustom];
     CGRect screen=[[UIScreen mainScreen]applicationFrame];
@@ -170,7 +175,7 @@
     [ButtonObj0.titleLabel setLineBreakMode:NSLineBreakByCharWrapping];
     
     [ButtonObj0 setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-    NSString *titleString=@"";
+    NSString *titleString=@"Welcome";
     
     [ButtonObj0.titleLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [ButtonObj0 setTitle:titleString forState:UIControlStateNormal];
@@ -182,6 +187,8 @@
     
     [ButtonObj0 setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [[[[picker viewControllers] lastObject] navigationItem] setTitleView:ButtonObj0];
+    
+    
 }
 
 -(void)launchMailAppOnDevice2:(NSString *)senderEmail subject:(NSString *) subject emailBody:(NSString *) emailBody
@@ -200,7 +207,7 @@
         
     }
     
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+   [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

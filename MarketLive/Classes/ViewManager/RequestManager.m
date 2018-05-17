@@ -18,7 +18,7 @@
         
         [objAppDelegate.drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
     }
-    else {
+  else {
         
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
         
@@ -30,6 +30,7 @@
             {
                 [objAppDelegate.objNavigationViewController pushViewController:objViewController animated:YES];
             }
+        
         }
         @catch (NSException *exception)
         {
@@ -42,13 +43,14 @@
 {
     AppDelegate * objAppDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     
+   UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     
-    @try
+
+   @try
     {
         id objViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
-        [objAppDelegate.objNavigationViewController presentViewController:objViewController animated:YES completion:nil];
+        [objAppDelegate.objNavigationViewController1 presentViewController:objViewController animated:YES completion:nil];
         
     }
     @catch (NSException *exception)

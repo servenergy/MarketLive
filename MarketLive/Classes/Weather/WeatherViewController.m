@@ -19,7 +19,7 @@
 @end
 
 @implementation WeatherViewController
-@synthesize cityLabel,dayLabel,tempLabel,mainImage;
+@synthesize cityLabel,dayLabel,tempLabel,mainImage,mainBg;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -60,12 +60,16 @@
         
     }
     
+
+    
     CLLocation * newLocation = [locations lastObject];
     NSLog(@"NewLocation %f %f", newLocation.coordinate.latitude, newLocation.coordinate.longitude);
 
     [self getWeatherDataFromLatitude:[NSString stringWithFormat:@"%f",newLocation.coordinate.latitude] longitude:[NSString stringWithFormat:@"%f",newLocation.coordinate.longitude]];
+    
+    
+    
 }
-
 
 -(void)getWeatherDataFromLatitude:(NSString *) latitude longitude:(NSString *)longitude {
     
@@ -76,6 +80,8 @@
     
     NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]] returningResponse:&response error:&error];
     
+
+    
     if (data) {
         
         NSData *jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
@@ -84,6 +90,7 @@
         
         NSData *currentData = [jsonData valueForKey:@"currently"];
         
+    
         NSString *temperatureString = [currentData valueForKey:@"temperature"];
         
         float fahrenheit = temperatureString.floatValue;
@@ -95,8 +102,7 @@
         
         
         
-        
-        
+    
         //currently
         
         NSData *dayData = [jsonData valueForKey:@"daily"];
@@ -123,8 +129,6 @@
             
             int day = (int)weekday+i;
             [dayArray addObject:[self getShortCutForDay:day]];
-            
-            
             
             
             NSString *iconString = [tmpData valueForKey:@"icon"];
@@ -201,8 +205,12 @@
         
         
         
-        mainImage.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:0]];
+        //mainImage.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:0]];
+        
+        mainBg.image = [UIImage imageNamed:[weatherImageArray objectAtIndex:0]];
+        
         dayLabel.text = [NSString stringWithFormat:@"%@",iconString];
+        
         tempLabel.text = [NSString stringWithFormat:@"Max: %@' C",[maxTempArray objectAtIndex:0]];
     }
     else
