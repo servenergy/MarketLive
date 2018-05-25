@@ -11,6 +11,7 @@
 
 
 
+
 @interface InfoViewController () <UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate>
 {
     NSMutableArray * infoViewArray;
@@ -88,25 +89,25 @@
 {
      [RequestManager pushViewWithStoryboardIdentifier:@"InfoViewController"];
    
-    if (indexPath.row == 2 ) {
+    if (indexPath.row == 2 || indexPath.row == 3) {
        
-        NSString * toEmail = @"feedback.servenergy@gmail.com";
-        NSString * subject = @"Recommend MarketLive App";
-        NSString * emailBody = @"I hope you would like \"MarketLive App\". You can download it from App Store and Google Play";
+        NSString * toEmail = @"";
+        NSString * subject = @"";
+        NSString * emailBody = @"" ;
         
         
-      /*  if (indexPath.row == 2)
+       if (indexPath.row == 2)
         {
-            toEmail = @"";
+            toEmail = @"servenergy@gmail.com";
             subject = @"Recommend MarketLive App";
             emailBody = @"I hope you would like \"MarketLive App\". You can download it from App Store and Google Play";
         }
         else if(indexPath.row == 3)
         {
-            toEmail = @"feedback.servenergy@gmail.com";
+            toEmail = @"servenergy@gmail.com";
             subject = @"Feedback - MarketLive App";
             emailBody = @"";
-        }*/
+        }
      
         Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
         if (mailClass != nil)
@@ -115,6 +116,8 @@
             // We must always check whether the current device is configured for sending emails
             if ([mailClass canSendMail])
             {
+                [RequestManager pushViewWithStoryboardIdentifier:@"InfoViewController"];
+
                 [self displayComposerSheet2:toEmail subject:subject emailBody:emailBody];
             }
             else

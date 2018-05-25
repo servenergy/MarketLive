@@ -216,7 +216,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunn.png" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-vc-5xX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36.png" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-vc-5xX">
                                 <rect key="frame" x="0.0" y="20" width="375" height="274"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="274" id="9Df-rt-ZFy"/>
@@ -1606,6 +1606,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="36.png" width="175" height="120"/>
         <image name="Bookmark.png" width="128" height="128"/>
         <image name="Call.png" width="128" height="128"/>
         <image name="Location.png" width="128" height="128"/>
@@ -1615,6 +1616,5 @@
         <image name="c2.png" width="160" height="240"/>
         <image name="c3.png" width="160" height="240"/>
         <image name="nextArrow.png" width="56" height="56"/>
-        <image name="sunn.png" width="256" height="256"/>
     </resources>
 </document>

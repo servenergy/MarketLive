@@ -38,7 +38,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunn.png" translatesAutoresizingMaskIntoConstraints="NO" id="UoT-rK-tUl">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36.png" translatesAutoresizingMaskIntoConstraints="NO" id="UoT-rK-tUl">
                         <rect key="frame" x="220" y="13" width="68" height="65"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="68" id="I6P-xk-qLB"/>
@@ -82,6 +82,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="sunn.png" width="256" height="256"/>
+        <image name="36.png" width="175" height="120"/>
     </resources>
 </document>

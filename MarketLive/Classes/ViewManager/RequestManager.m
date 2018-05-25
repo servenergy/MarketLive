@@ -8,6 +8,7 @@
 
 #import "RequestManager.h"
 
+
 @implementation RequestManager
 
 +(void) pushViewWithStoryboardIdentifier : (NSString *) identifier {
@@ -50,7 +51,7 @@
    @try
     {
         id objViewController = [storyboard instantiateViewControllerWithIdentifier:identifier];
-        [objAppDelegate.objNavigationViewController1 presentViewController:objViewController animated:YES completion:nil];
+        [objAppDelegate.objNavigationViewController presentViewController:objViewController animated:YES completion:nil];
         
     }
     @catch (NSException *exception)

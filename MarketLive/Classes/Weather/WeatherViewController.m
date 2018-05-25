@@ -135,54 +135,54 @@
             
             if ([iconString isEqualToString:@"clear-day"])
             {
-                [weatherImageArray addObject:@"sunn.png"];
+                [weatherImageArray addObject:@"36.png"];
                 [backgroundImageArray addObject:@"bluee.png"];
             }
             
             else if ([iconString isEqualToString:@"clear-night"])
             {
-                [weatherImageArray addObject:@"night.png"];
+                [weatherImageArray addObject:@"31.png"];
                 [backgroundImageArray addObject:@"bluee.png"];
             }
             
             else if ([iconString isEqualToString:@"rain"])
             {
-                [weatherImageArray addObject:@"rain.png"];
+                [weatherImageArray addObject:@"35.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"snow"])
             {
-                [weatherImageArray addObject:@"snow.png"];
+                [weatherImageArray addObject:@"18.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"sleet"])
             {
-                [weatherImageArray addObject:@"sleet.png"];
+                [weatherImageArray addObject:@"6.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"wind"])
             {
-                [weatherImageArray addObject:@"wind.png"];
+                [weatherImageArray addObject:@"23.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"fog"])
             {
-                [weatherImageArray addObject:@"fog.png"];
+                [weatherImageArray addObject:@"20.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"cloudy"])
             {
-                [weatherImageArray addObject:@"cloudy.png"];
+                [weatherImageArray addObject:@"26.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else if ([iconString isEqualToString:@"partly-cloudy-day"])
             {
-                [weatherImageArray addObject:@"partly-cloudy-day-icon.png"];
+                [weatherImageArray addObject:@"30.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             else
             {
-                [weatherImageArray addObject:@"cloudy-night-icon.png"];
+                [weatherImageArray addObject:@"29.png"];
                 [backgroundImageArray addObject:@"gray.png"];
             }
             
