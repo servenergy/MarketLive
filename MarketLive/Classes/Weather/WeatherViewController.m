@@ -196,6 +196,7 @@
         NSString *maxText = [tmpData valueForKey:@"temperatureMax"];
         
         
+        
         NSString *maxValue = [self getCelsius:maxText.floatValue];
         
         

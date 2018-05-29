@@ -23,11 +23,11 @@
     {
         if(screenHeight < 500)
         {
-            imageName = @"Default.png";
+            imageName = @"splashscreen.png";
         }
         else
         {
-            imageName = @"Default-568h@2x.png";
+            imageName = @"splashscreen.png";
         }
         
     }
